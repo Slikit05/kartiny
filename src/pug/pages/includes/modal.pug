@@ -1,0 +1,27 @@
+.modal-container.popup(id="call")
+  
+  .modal-container__container
+    .modal-container__wrapper
+
+
+      .my-modal.complectation
+        .my-modal__up
+          h3.my-modal__title Заказать звонок
+          .my-modal__close.close-popup
+            svg
+              use(xlink:href="img/sprite.svg#close-two")  
+        .my-modal__block
+          form.my-modal__form
+            .my-modal__row
+              span.my-modal__caption Ваше имя:
+              input.field(type="text")
+            .my-modal__row
+              span.my-modal__caption Телефон:
+              input.field(type="tel")
+            label.check
+              input(type="checkbox")
+              .check__square
+              span.check__text Согласен на обработку <a href="#">персональных данных</a>
+            .block-btn
+              button.block-btn__btn заказать звонок
+  

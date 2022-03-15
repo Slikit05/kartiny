@@ -1,0 +1,261 @@
+.page-footer {
+  background-color: #F1F1F2;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+
+  &__left-block {
+    padding-top: 18px;
+    max-width: 256px;
+    width: 100%;
+  }
+
+  &__center-block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding-left: 39px;
+  }
+
+  &__right-block {
+    max-width: 256px;
+    width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  &__down {
+    border-top: 1px solid #DBDBE3;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 32px 0;
+  }
+
+  &__row {
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 55px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    padding-left: 15px;
+    margin-left: 11%;
+    transition: all 0.3s ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 8px;
+      height: 2px;
+      background-color: #CC0F14;
+    }    
+
+    &:hover {
+      color: #cc0f14
+    }
+
+    &:active {
+      color: #cc0f14
+    }
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.tel-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.footer-list {
+  width: 50%;
+
+  &__wrap {
+    margin-top: 12px;
+  }
+
+  &__item {
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #cc0f14
+    }
+
+    &:active {
+      color: #cc0f14
+    }
+  }
+}
+
+.pay-row {
+  width: 100%;
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+  }
+
+  &__wrap-img {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+    display: block;
+    overflow: hidden;
+
+    &:last-child {
+      margin: 0;
+    }
+    &:hover {
+      .pay-row__img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    max-width: 40px;
+  }
+}
+
+.footer-caption {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.mail-link {
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: 0.55px;
+  color: #CC0F14;
+  padding-top: 5px;
+  display: block;
+  margin-bottom: 20px;
+
+  &:hover {
+    color: #CC0F14;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #CC0F14;
+    text-decoration: underline;
+  }
+}
+
+.wrap-text {
+  margin-bottom: 19px;
+
+  span {
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+  }
+}
+
+.instagram-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  margin-top: 18px;
+  margin-bottom: 22px;
+
+  &__wrap {
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    max-width: 64px;
+    &:hover {
+      .instagram-gallery__img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.social {
+  display: flex;
+  margin: 18px -8px 0;
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'GT Walsheim Pro', sans-serif;
+    display: block;
+    margin-right: 5px;
+  }
+
+  &__item {
+    padding: 0 8px;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    max-width: 32px;
+    overflow: hidden;
+    border-radius: 4px;
+    &:hover {
+      .social__img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+}

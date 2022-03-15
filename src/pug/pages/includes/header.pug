@@ -1,0 +1,201 @@
+section.header
+  .header-up
+
+    .header-up__up
+      .container.mob-scroll-menu
+        .header-up__up-close
+        .header-up__mob-container
+          .header-up__mob-scroll-wrap
+            .header-up__up-flex
+              .header-up__left-block
+                .header-up__wrapper-scroll
+                  .header-up__wrapper-mob
+                    ul.header-up__list
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Наше производство
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Доставка и оплата
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Отзывы (780)
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Акции
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Статьи
+                      li.header-up__item
+                        a.header-up__link(href="#")
+                          svg.header-up__svg
+                            use(xlink:href="img/sprite.svg#arrow-nav")
+                          span Фото наших картин
+
+              .header-up__right-block
+
+                a.link-sign(href="#")
+                  svg.link-sign__svg
+                    use(xlink:href="img/sprite.svg#enter-icon")
+                  span.link-sign__text Вход
+
+                a.link-sign(href="#")
+                  svg.link-sign__svg
+                    use(xlink:href="img/sprite.svg#registred-icon")
+                  span.link-sign__text регистрация
+
+              .mob-nav
+                .header-down__container
+                  .header-down__wrapper
+                    nav.nav
+                      ul.nav__list
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#module-icon")
+                            span.nav__link МОДУЛЬНЫЕ КАРТИНЫ
+                          include nav-drop-down.pug
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#poster-icon")
+                            span.nav__link ПОСТЕРЫ
+                          include nav-drop-down.pug
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#picture-ba-icon")
+                            span.nav__link КАРТИНЫ В БАГЕТЕ
+                          include nav-drop-down.pug
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#reproduction-icon")
+                            span.nav__link РЕПРОДУКЦИИ
+                          include nav-drop-down.pug
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#mirrors-icon")
+                            span.nav__link ЗЕРКАЛА В БАГЕТЕ
+                          include nav-drop-down.pug
+                        li.nav__item
+                          a.nav__row(href="#")
+                            svg.nav__svg
+                              use(xlink:href="img/sprite.svg#picture-photo-icon")
+                            span.nav__link КАРТИНА ПО ВАШЕМУ ФОТО
+                          include nav-drop-down.pug
+
+
+    .header-up__down
+      .container
+        .header-up__down-flex
+          a.logo(href="#")
+            .logo__wrap
+              img.logo__img(src="img/logo.svg")
+            .logo__wrap.logo__wrap--mob
+              img.logo__img-mob(src="img/logo-mob.svg")
+
+          .row-toggle
+            .row-toggle__wrapper
+              .toggle-nav(id="katalog")
+                .toggle-nav__wrapper
+                  svg.toggle-nav__svg
+                    use(xlink:href="img/sprite.svg#catalog")
+                  span.toggle-nav__text каталог
+
+              .toggle-nav(id="menu")
+                .toggle-nav__wrapper
+                  svg.toggle-nav__svg
+                    use(xlink:href="img/sprite.svg#burger")
+                  span.toggle-nav__text меню
+
+          .search-line
+            form.search-line__form
+              .search-line__wrapper
+                input.search-line__field(type="text" placeholder="артикул, название, теги")
+                button.search-line__btn(type="submit")
+                  svg.search-line__svg
+                    use(xlink:href="img/sprite.svg#search-icon")
+                  span.search-line__text найти
+
+          .header-up__right
+
+            .circle-link.none-circle(id="searcBtn")
+              span.circle-link__value
+              svg.circle-link__svg
+                use(xlink:href="img/sprite.svg#search-icon")
+              svg.circle-link__svg.circle-link__svg--close
+                use(xlink:href="img/sprite.svg#close")  
+            a.circle-link(href="#")
+              span.circle-link__value
+              svg.circle-link__svg
+                use(xlink:href="img/sprite.svg#favorites-icon")
+            a.circle-link(href="#")
+              span.circle-link__value 12
+              svg.circle-link__svg
+                use(xlink:href="img/sprite.svg#cart-icon")
+
+            .header-up__wrap
+              a.header-up__tel(href="tel:88002222298") 8 800 222 22 98
+              span.header-up__text-link.show_popup(rel="call") заказать звонок
+
+  .header-down
+    .header-down__close
+    .container
+      .header-down__container
+        .header-down__wrapper
+          nav.nav
+            ul.nav__list
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#module-icon")
+                  span.nav__link МОДУЛЬНЫЕ КАРТИНЫ
+                include nav-drop-down.pug
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#poster-icon")
+                  span.nav__link ПОСТЕРЫ
+                include nav-drop-down.pug
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#picture-ba-icon")
+                  span.nav__link КАРТИНЫ В БАГЕТЕ
+                include nav-drop-down.pug
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#reproduction-icon")
+                  span.nav__link РЕПРОДУКЦИИ
+                include nav-drop-down.pug
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#mirrors-icon")
+                  span.nav__link ЗЕРКАЛА В БАГЕТЕ
+                include nav-drop-down.pug
+              li.nav__item
+                a.nav__row(href="#")
+                  svg.nav__svg
+                    use(xlink:href="img/sprite.svg#picture-photo-icon")
+                  span.nav__link КАРТИНА ПО ВАШЕМУ ФОТО
+                include nav-drop-down.pug
+
+
+
+
+
+

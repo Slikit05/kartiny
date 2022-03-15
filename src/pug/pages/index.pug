@@ -1,0 +1,1259 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Картины Арт
+
+    include includes/link.pug
+
+  body
+    header
+      include includes/header.pug
+
+    main
+
+      section.first-screen(style="background-image: url(img/first-screen-bg.jpg)")
+        .container
+          .first-screen__wrapper
+            span.first-screen__subtitle Более 7000 картин в Наличии!
+            h1.first-screen__title Интернет магазин картин c доставкой по России
+            p.first-screen__text Печать любой картины на заказ. Купить в интернет магазине картины недорого. Не только купить картины, которые в наличии, но и заказать с любым вашим изображением.
+        .first-screen__down
+          .first-screen__down-bg(style="background-image: url(img/first-screen-bg.jpg)")
+          .container
+            .first-screen__down-wrapper
+              .block-info
+                .block-info__wrap-icon
+                  svg.block-info__svg
+                    use(xlink:href="img/sprite.svg#print")
+                .block-info__block-text
+                  h4.block-info__caption Собственное производство
+                  span.block-info__text Эко-печать. Натуральные материалы
+
+              .block-info
+                .block-info__wrap-icon
+                  svg.block-info__svg
+                    use(xlink:href="img/sprite.svg#delivery")
+                .block-info__block-text
+                  h4.block-info__caption Доставка по всей России
+                  span.block-info__text От 3 дней по РФ.<br> Бесплатно по Краснодару
+
+              .block-info
+                .block-info__wrap-icon
+                  svg.block-info__svg
+                    use(xlink:href="img/sprite.svg#payment")
+                .block-info__block-text
+                  h4.block-info__caption Все виды оплат
+                  span.block-info__text Наложенный платеж, VISA, электронные деньги, Qiwi
+
+              .block-info
+                .block-info__wrap-icon
+                  svg.block-info__svg
+                    use(xlink:href="img/sprite.svg#waranty")
+                .block-info__block-text
+                  h4.block-info__caption Гарантия
+                  span.block-info__text 1 год на картины.<br> 14 дней на возврат
+                  
+      section.offset-type-one
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Популярные модульные картины
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider1
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture1.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Букет сирени в корзине
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture2.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Цветочная абстракция
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture3.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Невидимая геометрия цветка
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture4.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Белое спокойствие
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture1.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Невидимая геометрия цветка
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Популярные картины-постеры
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider2
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture5.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Охотники на привале
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture6.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Компазиция VIII
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                                span.picture-block__old-price 4200
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture7.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Утро в сосновом лесу
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture8.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Поцелуй
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture1.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Утро в сосновом лесу
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Репродукции картин
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider3
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture9.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Закат в ялте
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture10.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Сикстинская Мадонна
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture11.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Звездная ночь
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture12.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Три богатыря
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture5.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Звездная ночь
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Распродажа готовых картин
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider4
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture13.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Композиция VIII
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture14.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Моне Клод «Уголок сада в Монжероне»
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture15.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Грачи прилетели»
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture16.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Лунная ночь над Роной»
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture11.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Грачи прилетели»
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Зеркала в багете
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider5
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture17.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Зеркала в багете
+                              p.picture-block__name Зеркало в багетной раме «Название»
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture18.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Зеркала в багете
+                              p.picture-block__name Зеркало в багетной раме «Название»
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture19.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Зеркала в багете
+                              p.picture-block__name Зеркало в багетной раме «Название»
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture20.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Зеркала в багете
+                              p.picture-block__name Зеркало в багетной раме «Название»
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture13.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Зеркала в багете
+                              p.picture-block__name
+                              .picture-block__row
+                                span.picture-block__price
+                                span.picture-block__old-price
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.content-row
+          .container
+            .content-row__up
+
+              h2.title-page Популярные картины в багете
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider6
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture21.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Моне Клод «Уголок сада в Монжероне»
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture22.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Лунная ночь над Роной»
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture23.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Волна»
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture24.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Лебеди, отражённые в слонах
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture4.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Картина «Волна»
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.reviews
+          .container
+            .reviews__up
+              h2.title-page Отзывы
+
+              .reviews-tab-items
+                .reviews-tab-items__wrap.reviews-tab-items__wrap--active(rel="video")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/response_video.svg")
+                    span.reviews-tab-items__name видео отзывы
+                .reviews-tab-items__wrap(rel="vk")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/vk.png")
+                    span.reviews-tab-items__name отзывы из VK
+                .reviews-tab-items__wrap(rel="site")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/response_site.svg")
+                    span.reviews-tab-items__name отзывы c cайта
+
+            .reviews__wrapper
+              .reviews-tab-content.active-tab-content(id="video")
+                .reviews-banner
+                  .reviews-banner__wrap-img
+                    img.reviews-banner__img.reviews-banner__img--offset-top(src="img/banner-img.png")
+                    .reviews-banner__img-animate(style="background-image: url(img/social.png)")
+                  .reviews-banner__block-text
+                    span.reviews-banner__text Акция!!!
+                    h3.reviews-banner__title Вернем 500 рублей за видео отзыв!
+                    .block-btn
+                      button.block-btn__btn подробнее об акции
+
+                .reviews-slider#reviews1
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img1.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img2.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img3.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img1.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+              .reviews-tab-content(id="vk")
+                //.reviews-banner
+                  .reviews-banner__wrap-img
+                    img.reviews-banner__img.reviews-banner__img--offset-top(src="img/banner-img.png")
+                    .reviews-banner__img-animate(style="background-image: url(img/social.png)")
+                  .reviews-banner__block-text
+                    span.reviews-banner__text Акция!!!
+                    h3.reviews-banner__title Вернем 500 рублей за видео отзыв!
+                    .block-btn
+                      button.block-btn__btn подробнее об акции
+
+                .reviews-slider#reviews2
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.                         
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.                                
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+              .reviews-tab-content(id="site")
+                
+
+                .reviews-slider#reviews3
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")                              
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+        section.info-row
+          .container
+            .info-row__up
+              h2.title-page Модульные картины в Краснодаре
+
+            .info-row__wrapper
+              img.info-row__img(src="img/info-img.jpg")
+              .info-row__block-text
+                h4 Пример подзаголовка текста
+                p Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира. Ощущение мира, следовательно, оспособляет трагический смысл жизни. 
+                p Наряду с этим структурализм абстрактен. Частное - это класс эквивалентности. Представление, в рамках сегодняшних воззрений, рассматривается через интеллект. Можно предположить, что врожденная интуиция, как принято считать, откровенна. Интересно отметить, что конфликт, пренебрегая деталями, нетривиален. Согласно предыдущему, любовь, конечно, творит постмодернизм. Структурализм непредвзято трансформирует типичный смысл жизни, учитывая известные обстоятельства. 
+
+            .info-row__down
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text читать полностью
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.sect-search
+          .container
+            .sect-search__wrapper
+              h3.sect-search__title Подпишитесь на акции, новости и подарки
+              .sect-search__wrap
+                form.line-form
+                  .line-form__wrap
+                    input.line-form__field(type="email" placeholder="введите Ваш e-mail")
+                    button.line-form__btn
+                      svg.line-form__svg
+                        use(xlink:href="img/sprite.svg#mail")
+                      span.line-form__text подписаться
+
+
+
+
+
+
+
+    footer
+      include includes/footer.pug
+
+
+
+
+    include includes/script.pug

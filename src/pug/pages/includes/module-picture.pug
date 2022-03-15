@@ -1,0 +1,195 @@
+.tabs-picture-content__content.tabs-picture-content__content--open(id="module-picture")
+  .tabs-picture-content__wrapper
+
+    .wrap-block
+
+      include picture-slider.pug
+
+    .wrap-block-wrapper
+      .wrap-block__flex
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#delivery")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Доставка по всей России
+            span.block-info__text От 3 дней по РФ. Бесплатно по Краснодару
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#payment")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Все виды оплат
+            span.block-info__text Наложенный платеж, VISA, электронные деньги, Qiwi
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#waranty")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Гарантия
+            span.block-info__text 1 год на картины. <br>14 дней на возврат
+
+      .wrap-block__area-text
+        p Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира. Ощущение мира, следовательно, оспособляет трагический смысл жизни.
+
+        p Наряду с этим структурализм абстрактен. Частное - это класс эквивалентности. Представление, в рамках сегодняшних воззрений, рассматривается через интеллект. Можно предположить, что врожденная интуиция, как принято считать, откровенна. Интересно отметить, что конфликт, пренебрегая деталями, нетривиален. Согласно предыдущему, любовь, конечно, творит постмодернизм.
+      .wrap-block__down
+        span.social__text ПОДЕЛИТЬСЯ
+        ul.social
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social1.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social2.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social3.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social4.png")
+
+    .wrap-block-info
+
+      .size
+        h3.sm-caption ВЫБЕРИТЕ РАЗМЕР И ПАРАМЕТРЫ
+        .size__up
+          label.size-field
+            span.size-field__caption Ширина, см
+            input.size-field__input(type="text")
+
+          span.size-cross x
+
+          label.size-field
+            span.size-field__caption Высота, см
+            input.size-field__input(type="text")
+
+        .size__middle
+          .slider-size
+            .slider-size__wrap#sizeSlider
+        .size__down
+          span.size__text Размеры, см:
+          span.size__text 20 x 50,
+          span.size__text 20 x 50,
+          span.size__text 20 x 50,
+          span.size__text 20 x 50
+
+      .setings-dropdown
+        .setings-dropdown__row
+          span.setings-dropdown__caption НАСТРОИТЬ РАЗМЕР МОДУЛЕЙ
+          span.setings-dropdown__caption.setings-dropdown__caption--two закрыть настройки модулей
+          svg.setings-dropdown__arrow
+            use(xlink:href="img/sprite.svg#arrow-nav")
+        .setings-dropdown__wrap
+          .setings-dropdown__flex.setings-dropdown__flex--change
+            h3.sm-caption тип модулей
+            .type-module(data-type-module="")
+              .type-module__wrap-img
+                img.type-module__img(src="img/module1.jpg")
+              span вертикальные
+            .type-module(data-type-module="")
+              .type-module__wrap-img
+                img.type-module__img(src="img/module2.jpg")
+              span горизонтальные
+
+          .setings-dropdown__flex
+            h3.sm-caption КОЛ-ВО МОДУЛЕЙ
+
+            .quantity
+              .quantity__block
+                .quantity__minus
+                  //img(src="img/minus.svg")
+                  svg
+                    use(xlink:href="img/sprite.svg#minus")
+
+              .quantity__value
+                input.quantity__number(type="text" value="0")
+
+              .quantity__block
+                .quantity__plus
+                  //img(src="img/plus.svg")
+                  svg
+                    use(xlink:href="img/sprite.svg#plus")
+
+          .setings-dropdown__grid
+            .setings-wrap-field
+              span.setings-wrap-field__caption модуль 1, см:
+              .setings-wrap-field__flex
+                input.setings-wrap-field__field(type="text")
+                span.lg-cross x
+                input.setings-wrap-field__field(type="text")
+            .setings-wrap-field
+              span.setings-wrap-field__caption модуль 2, см:
+              .setings-wrap-field__flex
+                input.setings-wrap-field__field(type="text")
+                span.lg-cross x
+                input.setings-wrap-field__field(type="text")
+            .setings-wrap-field
+              span.setings-wrap-field__caption модуль 3, см:
+              .setings-wrap-field__flex
+                input.setings-wrap-field__field(type="text")
+                span.lg-cross x
+                input.setings-wrap-field__field(type="text")
+            .setings-wrap-field
+              span.setings-wrap-field__caption модуль 4, см:
+              .setings-wrap-field__flex
+                input.setings-wrap-field__field(type="text")
+                span.lg-cross x
+                input.setings-wrap-field__field(type="text")
+
+          .setings-dropdown__down
+            .setings-btn
+              span.setings-btn__text посмотреть результат
+              svg.setings-btn__svg
+                use(xlink:href="img/sprite.svg#check")
+
+      .setings-flex
+        h3.sm-caption ХОЛСТ
+        .setings-flex__wrapper
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block.jpg")
+            span искуственный
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block2.jpg")
+            span натуральный
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block3.jpg")
+            span premium
+
+      .setings-flex
+        h3.sm-caption ПОКРЫТИЕ
+        .setings-flex__wrapper
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block4.jpg")
+            span без
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block5.jpg")
+            span фактурный гель
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block6.jpg")
+            span акриловый лак
+
+      .setings-down
+        .setings-down__wrapper
+          .setings-price-block
+            .setings-price-block__row
+              span.setings-price-block__price 2 450
+              .setings-price-block__wrap
+                span.setings-price-block__old-price 4900
+                span.setings-price-block__val руб.
+            span.setings-price-block__text Скидка — <span>50%</span>, экономия — <span>2450 руб.</span>
+
+          .setings-down__wrap-btn
+            .block-btn
+              button.block-btn__btn в корзину
+            .block-btn
+              button.block-btn__btn.block-btn__btn--white заказать в один клик

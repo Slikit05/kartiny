@@ -1,0 +1,121 @@
+.tabs-picture-content__content(id="poster-picture")
+  .tabs-picture-content__wrapper
+
+    .wrap-block
+
+      include picture-slider.pug
+
+    .wrap-block-wrapper
+      .wrap-block__flex
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#delivery")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Доставка по всей России
+            span.block-info__text От 3 дней по РФ. Бесплатно по Краснодару
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#payment")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Все виды оплат
+            span.block-info__text Наложенный платеж, VISA, электронные деньги, Qiwi
+
+        .block-info
+          .block-info__wrap-icon.block-info__wrap-icon--red
+            svg.block-info__svg
+              use(xlink:href="img/sprite.svg#waranty")
+          .block-info__block-text.block-info__block-text--change
+            h4.block-info__caption Гарантия
+            span.block-info__text 1 год на картины. <br>14 дней на возврат
+
+      .wrap-block__area-text
+        p Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира. Ощущение мира, следовательно, оспособляет трагический смысл жизни.
+
+        p Наряду с этим структурализм абстрактен. Частное - это класс эквивалентности. Представление, в рамках сегодняшних воззрений, рассматривается через интеллект. Можно предположить, что врожденная интуиция, как принято считать, откровенна. Интересно отметить, что конфликт, пренебрегая деталями, нетривиален. Согласно предыдущему, любовь, конечно, творит постмодернизм.
+      .wrap-block__down
+        span.social__text ПОДЕЛИТЬСЯ
+        ul.social
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social1.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social2.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social3.png")
+          li.social__item
+            a.social__link(href="#")
+              img.social__img(src="img/social4.png")
+
+    .wrap-block-info
+
+      .size
+        h3.sm-caption ВЫБЕРИТЕ РАЗМЕР И ПАРАМЕТРЫ
+        .size__up
+          label.size-field
+            span.size-field__caption Ширина, см
+            input.size-field__input(type="text")
+
+          span.size-cross x
+
+          label.size-field
+            span.size-field__caption Высота, см
+            input.size-field__input(type="text")
+
+        .size__middle
+          .slider-size
+            .slider-size__wrap
+
+
+      .setings-flex
+        h3.sm-caption ХОЛСТ
+        .setings-flex__wrapper
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block.jpg")
+            span искуственный
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block2.jpg")
+            span натуральный
+          .change-block(data-type-linen="")
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block3.jpg")
+            span premium
+
+      .setings-flex
+        h3.sm-caption ПОКРЫТИЕ
+        .setings-flex__wrapper
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block4.jpg")
+            span без
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block5.jpg")
+            span фактурный гель
+          .change-block
+            .change-block__wrap-img
+              img.change-block__img(src="img/change-block6.jpg")
+            span акриловый лак
+
+      .setings-down
+        .setings-down__wrapper
+          .setings-price-block
+            .setings-price-block__row
+              span.setings-price-block__price 2 450
+              .setings-price-block__wrap
+                span.setings-price-block__old-price 4900
+                span.setings-price-block__val руб.
+            span.setings-price-block__text Скидка — <span>50%</span>, экономия — <span>2450 руб.</span>
+
+          .setings-down__wrap-btn
+            .block-btn
+              button.block-btn__btn в корзину
+            .block-btn
+              button.block-btn__btn.block-btn__btn--white заказать в один клик

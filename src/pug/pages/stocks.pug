@@ -1,0 +1,158 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Картины Арт
+
+    include includes/link.pug
+
+  body
+    header
+      include includes/header.pug
+
+    main
+      section.breadcrumbs
+        .container
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              a.breadcrumbs__link(href="#") Главная
+            li.breadcrumbs__item.breadcrumbs__item--active
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              span.breadcrumbs__link Акции
+
+
+      section.offset-type-two
+
+        section.row-up-inner
+          .container
+            h2.title-inner Акции
+
+        section.useful-articles.useful-articles--change.non-padding-top
+          .container
+            .useful-articles__wrapper
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+        .pagination
+          .pagination__wrapper
+            .pagination__arrow.pagination__arrow--prev
+              svg.pagination__svg
+                use(xlink:href="img/sprite.svg#arrow")
+
+            ul.pagination__list
+              li.pagination__item
+                a.pagination__link.pagination__link--active(href="#")
+                  span.pagination__text 1
+              li.pagination__item
+                a.pagination__link(href="#")
+                  span.pagination__text 2
+              li.pagination__item
+                a.pagination__link(href="#")
+                  span.pagination__text 3
+              li.pagination__item.pagination__item--none
+                a.pagination__link(href="#")
+                  span.pagination__text 4
+              li.pagination__item
+                span.pagination__text.pagination__text--dots ...
+              li.pagination__item
+                a.pagination__link(href="#")
+                  span.pagination__text 24
+
+            .pagination__arrow.pagination__arrow--next
+              svg.pagination__svg
+                use(xlink:href="img/sprite.svg#arrow")
+
+        section.sect-search
+          .container
+            .sect-search__wrapper
+              h3.sect-search__title Подпишитесь на акции, новости и подарки
+              .sect-search__wrap
+                form.line-form
+                  .line-form__wrap
+                    input.line-form__field(type="email" placeholder="введите Ваш e-mail")
+                    button.line-form__btn
+                      svg.line-form__svg
+                        use(xlink:href="img/sprite.svg#mail")
+                      span.line-form__text подписаться
+
+
+
+
+
+
+
+    footer
+      include includes/footer.pug
+
+
+
+
+    include includes/script.pug

@@ -1,0 +1,75 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Картины Арт
+
+    include includes/link.pug
+
+  body
+    header
+      include includes/header.pug
+
+    main
+      section.breadcrumbs
+        .container
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              a.breadcrumbs__link(href="#") Главная
+            li.breadcrumbs__item.breadcrumbs__item--active
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              span.breadcrumbs__link Акции
+
+
+      section.offset-type-three
+
+        section.grid-two-column
+          .container
+            .grid-two-column__wrapper
+              .grid-two-column__left
+                span.date c 20 августа, 2019 по 20 ноября, 2019
+                h2.title-page.title-page--border Пример названия акции
+              .grid-two-column__right
+                .inner-area
+                  img(src="img/inner-img.jpg")
+                  h3 Пример подзаголовка текста
+                  p Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира. Ощущение мира, следовательно, оспособляет трагический смысл жизни.
+                  p Наряду с этим структурализм абстрактен. Частное - это класс эквивалентности. Представление, в рамках сегодняшних воззрений, рассматривается через интеллект. Можно предположить, что врожденная интуиция, как принято считать, откровенна. Интересно отметить, что конфликт, пренебрегая деталями, нетривиален. Согласно предыдущему, любовь, конечно, творит постмодернизм. Структурализм непредвзято трансформирует типичный смысл жизни, учитывая известные обстоятельства.
+                .flex-down
+                  .watch-btn.watch-btn--back
+                    .watch-btn__wrapper
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+                      span.watch-btn__text назад к списку
+
+
+        section.sect-search
+          .container
+            .sect-search__wrapper
+              h3.sect-search__title Подпишитесь на акции, новости и подарки
+              .sect-search__wrap
+                form.line-form
+                  .line-form__wrap
+                    input.line-form__field(type="email" placeholder="введите Ваш e-mail")
+                    button.line-form__btn
+                      svg.line-form__svg
+                        use(xlink:href="img/sprite.svg#mail")
+                      span.line-form__text подписаться
+
+
+
+
+
+
+
+    footer
+      include includes/footer.pug
+
+
+
+
+    include includes/script.pug

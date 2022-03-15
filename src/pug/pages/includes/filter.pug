@@ -1,0 +1,94 @@
+section.filter-goods
+  .container
+    .filter-goods__sect
+      .filter-row-mob
+        span.filter-row-mob__text фильтры
+        svg.filter-row-mob__svg
+          use(xlink:href="img/sprite.svg#arrow")
+
+      .filter-goods__container
+        .filter-goods__up
+
+          .collor-choice
+            h4.sm-title Цветы:
+            .collor-choice__wrapper
+              .collor-item
+                .collor-item__circle(style="background-color: #fff;")
+              .collor-item
+                .collor-item__circle(style="background-color: #000;")
+              .collor-item
+                .collor-item__circle(style="background-color: #654321;")
+              .collor-item
+                .collor-item__circle(style="background-color: #FC2525;")
+              .collor-item
+                .collor-item__circle(style="background-color: #FF8000;")
+              .collor-item
+                .collor-item__circle(style="background-color: #F7D358;")
+              .collor-item
+                .collor-item__circle(style="background-color: #088A29;")
+              .collor-item
+                .collor-item__circle(style="background-color: #42AAFF;")
+              .collor-item
+                .collor-item__circle(style="background-color: #0000FF;")
+              .collor-item
+                .collor-item__circle(style="background-color: #8B00FF;")
+              .collor-item
+                .collor-item__circle(style="background-color: #F56284;")
+              .collor-item
+                .collor-item__circle(style="background-image: url(img/ellipse-color.png)")
+
+          .number-of-modules
+            h4.sm-title КОЛИЧЕСТВО МОДУЛЕЙ:
+            .number-of-modules__wrapper
+              .number-of-modules__item
+                span.number-of-modules__number 2
+              .number-of-modules__item
+                span.number-of-modules__number 3
+              .number-of-modules__item
+                span.number-of-modules__number 4
+              .number-of-modules__item
+                span.number-of-modules__number 5
+              .number-of-modules__item
+                span.number-of-modules__number 6
+              .number-of-modules__item
+                span.number-of-modules__number 7>
+
+        form.filter-goods__wrapper
+
+          .row-field
+            .row-field__wrapper
+              h4.sm-title РАЗМЕР, СМ:
+              .row-field__wrap
+                .row-field__wrap-field
+                  input.row-field__field(type="text" placeholder="ширина")
+                .row-field__wrap-field
+                  input.row-field__field(type="text" placeholder="высота")
+
+          .row-field
+            .row-field__wrapper
+              h4.sm-title ЦЕНА, РУБ:
+              .row-field__wrap
+                .row-field__wrap-field
+                  input.row-field__field(type="text" placeholder="от")
+                .row-field__wrap-field
+                  input.row-field__field(type="text" placeholder="до")
+
+        .tegs
+          h4.sm-title В ИНТЕРЬЕР
+          ul.tegs__wrapper
+            li.tegs__item
+              span Для кухни
+            li.tegs__item
+              span В гостиную
+            li.tegs__item
+              span В гостиную
+            li.tegs__item
+              span В спальню
+            li.tegs__item
+              span В детскую
+            li.tegs__item
+              span Для кафе
+            li.tegs__item
+              span Для гостиниц
+            li.tegs__item
+              span Для офиса

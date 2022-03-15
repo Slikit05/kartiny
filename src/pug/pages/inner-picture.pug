@@ -1,0 +1,702 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Картины Арт
+
+    include includes/link.pug
+
+  body
+    header
+      include includes/header.pug
+
+    main
+      section.breadcrumbs
+        .container
+          ul.breadcrumbs__list
+            li.breadcrumbs__item
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              a.breadcrumbs__link(href="#") Главная
+            li.breadcrumbs__item.breadcrumbs__item--active
+              svg.breadcrumbs__svg
+                use(xlink:href="img/sprite.svg#arrow")
+              span.breadcrumbs__link Модульные картины
+
+
+      section.offset-type-two
+
+        section.row-up-inner
+          .container
+            h2.title-inner Мoдульная картина "Маки розовые"
+
+        section.info-picture
+          .container
+            .info-picture__flex
+              .tags
+                ul.tags__list
+                  li.tags__item
+                    a.tags__link(href="#") Орхидеи
+                  li.tags__item
+                    a.tags__link(href="#") Цветы
+                  li.tags__item
+                    a.tags__link(href="#") Розовый
+
+              .vendor-code
+                span.vendor-code__caption Артикул:
+                span.vendor-code__text М12345
+
+        section.tabs-picture
+          .container
+            .tabs-picture__wrapper
+              .picture-tab-items
+                .picture-tab-items__block
+                  .picture-tab-items__wrap.picture-tab-items__wrap--active(rel="module-picture")
+                    .picture-tab-items__btn
+                      svg.picture-tab-items__img
+                        use(xlink:href="img/sprite.svg#module-icon")
+                      span.picture-tab-items__name Модульная картина
+                .picture-tab-items__block
+                  .picture-tab-items__wrap(rel="poster-picture")
+                    .picture-tab-items__btn
+                      svg.picture-tab-items__img
+                        use(xlink:href="img/sprite.svg#poster-icon")
+                      span.picture-tab-items__name Картина постер
+                .picture-tab-items__block
+                  .picture-tab-items__wrap(rel="baguette-picture")
+                    .picture-tab-items__btn
+                      svg.picture-tab-items__img
+                        use(xlink:href="img/sprite.svg#picture-ba-icon")
+                      span.picture-tab-items__name Картина в багете
+                .picture-tab-items__block
+                  .picture-tab-items__wrap(rel="roll-picture")
+                    .picture-tab-items__btn
+                      svg.picture-tab-items__img
+                        use(xlink:href="img/sprite.svg#poster")
+                      span.picture-tab-items__name Картины в рулоне
+
+        section.tabs-picture-content
+          .container
+            include includes/module-picture.pug
+            include includes/poster-picture.pug
+            include includes/baguette-picture.pug
+
+        section.content-row.border-bottom
+          .container
+            .content-row__up
+
+              h2.title-page Возможно, Вам понравится
+
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__wrapper
+
+              .content-row__wrap-slider#picture-slider1
+                .picture-slider.swiper-container
+                  .picture-slider__wrapper.swiper-wrapper
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture1.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Букет сирени в корзине
+                              .picture-block__row
+                                span.picture-block__price 2 450 руб.
+                                span.picture-block__old-price 5650
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture2.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Цветочная абстракция
+                              .picture-block__row
+                                span.picture-block__price 3 700 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture3.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Невидимая геометрия цветка
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture4.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Белое спокойствие
+                              .picture-block__row
+                                span.picture-block__price 4 200 руб.
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                    .picture-slider__slide.swiper-slide
+                      .picture-slider__wrap
+                        .picture-block
+                          .heart-wrap
+                            svg.heart-wrap__svg(viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+                              path(d="M15.9993 4.73864C15.9993 9.34397 7.99933 15 7.99933 15C7.99933 15 0 9.34397 0 4.73864C0 0.134014 6.59133 -0.351089 8 4.36344C9.36 -0.47639 15.9993 0.134714 15.9993 4.73864Z")
+                              rect.white-line(x="5.87891" y="4.46448" width="8" height="2" rx="1" transform="rotate(45 5.87891 4.46448)")
+                              rect.white-line(x="11.5352" y="5.87869" width="8" height="2" rx="1" transform="rotate(135 11.5352 5.87869)")
+                          a.picture-block__content(href="#")
+                            .picture-block__up
+                              img.picture-block__img(src="img/picture1.jpg")
+                            .picture-block__block-text
+                              h5.picture-block__caption Название категории
+                              p.picture-block__name Невидимая геометрия цветка
+                              .picture-block__row
+                                span.picture-block__price 1 200 руб.
+                                span.picture-block__old-price 2440
+                          .picture-block-dropdown
+                            .picture-block-dropdown__row
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn.block-btn__btn--white подробнее
+                              .picture-block-dropdown__block
+                                .block-btn
+                                  button.block-btn__btn заказать
+
+                .picture-slider__arrow.picture-slider__arrow--prev
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+                .picture-slider__arrow.picture-slider__arrow--next
+                  svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+            .content-row__down
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+
+        section.useful-articles.useful-articles--change
+          .container
+            .useful-articles__wrapper
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Преимущества модульных картин
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Это простой способ наполнить помещение жизнью и красотой, декорирование не занимает много места – нужно только повесить полотна в определенном порядке.
+
+              .useful-articles-post
+                figure.useful-articles-post__wrap-img
+                  img.useful-articles-post__img(src="img/articles1.jpg")
+                .useful-articles-post__block-text
+                  .useful-articles-post__up
+
+                    h3.useful-articles-post__title Как купить модульную картину природы
+                    span.useful-articles-post__date c 20 августа, 2019 по 20 ноября, 2019
+                  .useful-articles-post__text
+                    p Чтобы купить модульную картину природы, стоит обратить внимание не только на сам сюжет, но и тонкости расположения, поскольку предполагается наличие нескольких элементов, составляющих единую картинку.
+
+        section.grid-four-column-post
+          .container
+            h2.title-page В стоимость картины входит
+            .grid-four-column-post__wrapper
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Холст из натурального хлопка
+                  p.compound-post__text Мы используем натуральные холсты Европейского качества из 100% хлопка
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption HD печать экологичными красками
+                  p.compound-post__text Печать производится экологически чистыми красками на японском оборудовании. Качество HD, разрешение 1440dpi
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Подрамник из натуральной <br>сосны
+                  p.compound-post__text Подрамник изготавливается из высококачественной сосны, без деформаций. Толщина 4х2 см.
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Галерейная натяжка
+                  p.compound-post__text Аккуратная натяжка холста на подрамник галерейным способом. Изображение продолжается на торцах подрамника и закрепляется скобами ссзади.
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Подрамник из натуральной сосны
+                  p.compound-post__text Подрамник изготавливается из высококачественной сосны, без деформаций. Толщина 4х2 см.
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Галерейная натяжка
+                  p.compound-post__text Аккуратная натяжка холста на подрамник галерейным способом. Изображение продолжается на торцах подрамника и закрепляется скобами ссзади.
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption Холст из натурального хлопка
+                  p.compound-post__text Мы используем натуральные холсты Европейского качества из 100% хлопка
+              .compound-post
+                .compound-post__wrap-img
+                  img.compound-post__img(src="img/compound1.png")
+                .compound-post__wrap-text
+                  h4.compound-post__caption HD печать экологичными красками
+                  p.compound-post__text Печать производится экологически чистыми красками на японском оборудовании. Качество HD, разрешение 1440dpi
+
+        section.gallery-photo
+          .container
+            h2.title-page Фотографии наших картин
+            .gallery-photo__wrapper
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+              a.post-gallery(href="#")
+                .post-gallery__wrap-img
+                  img.post-gallery__img(src="img/gallery1.jpg")
+                .post-gallery__block-text
+                  span.post-gallery__city Краснодар
+                  span.post-gallery__name Иванов Иван
+
+            .gallery-photo__down
+              .watch-btn
+                .watch-btn__wrapper
+                  span.watch-btn__text смотреть все
+                  svg.watch-btn__svg
+                    use(xlink:href="img/sprite.svg#arrow")
+
+        section.reviews
+          .container
+            .reviews__up
+              h2.title-page Отзывы
+
+              .reviews-tab-items
+                .reviews-tab-items__wrap.reviews-tab-items__wrap--active(rel="video")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/response_video.svg")
+                    span.reviews-tab-items__name видео отзывы
+                .reviews-tab-items__wrap(rel="vk")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/vk.png")
+                    span.reviews-tab-items__name отзывы из VK
+                .reviews-tab-items__wrap(rel="site")
+                  .reviews-tab-items__btn
+                    img.reviews-tab-items__img(src="img/response_site.svg")
+                    span.reviews-tab-items__name отзывы c cайта
+
+            .reviews__wrapper
+              .reviews-tab-content.active-tab-content(id="video")
+                .reviews-banner
+                  .reviews-banner__wrap-img
+                    img.reviews-banner__img.reviews-banner__img--offset-top(src="img/banner-img.png")
+                    .reviews-banner__img-animate(style="background-image: url(img/social.png)")
+                  .reviews-banner__block-text
+                    span.reviews-banner__text Акция!!!
+                    h3.reviews-banner__title Вернем 500 рублей за видео отзыв!
+                    .block-btn
+                      button.block-btn__btn подробнее об акции
+
+                .reviews-slider#reviews1
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img1.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img2.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img3.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .video-block
+                            figure.video-block__wrap-img
+                              img.video-block__img(src="img/video-img1.jpg")
+                              .video-block__play
+                                svg.video-block__svg
+                                  use(xlink:href="img/sprite.svg#play")
+                            .video-block__block-text
+                              span.video-block__date 20 августа, 2019
+                              span.video-block__name Петр Петрович
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+              .reviews-tab-content(id="vk")
+                //.reviews-banner
+                  .reviews-banner__wrap-img
+                    img.reviews-banner__img.reviews-banner__img--offset-top(src="img/banner-img.png")
+                    .reviews-banner__img-animate(style="background-image: url(img/social.png)")
+                  .reviews-banner__block-text
+                    span.reviews-banner__text Акция!!!
+                    h3.reviews-banner__title Вернем 500 рублей за видео отзыв!
+                    .block-btn
+                      button.block-btn__btn подробнее об акции
+
+                .reviews-slider#reviews2
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              img.reviews-block__user-img(src="img/user-img.png")
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+              .reviews-tab-content(id="site")
+
+
+                .reviews-slider#reviews3
+                  .reviews-slider__slider.swiper-container
+                    .reviews-slider__wrapper.swiper-wrapper
+
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+                      .reviews-slider__slide.swiper-slide
+                        .reviews-slider__wrap
+                          .reviews-block
+                            figure.reviews-block__wrap-img
+                              img.reviews-block__img(src="img/reviews-vk.jpg")
+                            .reviews-block__down
+                              .reviews-block__block-info
+                                span.reviews-block__date 20 августа, 2019
+                                span.reviews-block__name Иванова Мария
+                              .reviews-block__block-text
+                                p.reviews-block__text Надо сказать, что общество, конечно, дискредитирует естественный интеллект. Постмодернизм трансформирует непредвиденный закон внешнего мира.
+
+                  .reviews-slider__arrow.reviews-slider__arrow--prev
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+                  .reviews-slider__arrow.reviews-slider__arrow--next
+                    svg
+                      use(xlink:href="img/sprite.svg#arrow")
+
+                .reviews-tab-content__down
+                  .watch-btn
+                    .watch-btn__wrapper
+                      span.watch-btn__text смотреть все
+                      svg.watch-btn__svg
+                        use(xlink:href="img/sprite.svg#arrow")
+
+
+
+        section.sect-search
+          .container
+            .sect-search__wrapper
+              h3.sect-search__title Подпишитесь на акции, новости и подарки
+              .sect-search__wrap
+                form.line-form
+                  .line-form__wrap
+                    input.line-form__field(type="email" placeholder="введите Ваш e-mail")
+                    button.line-form__btn
+                      svg.line-form__svg
+                        use(xlink:href="img/sprite.svg#mail")
+                      span.line-form__text подписаться
+
+
+
+
+
+
+
+    footer
+      include includes/footer.pug
+
+
+
+
+    include includes/script.pug
